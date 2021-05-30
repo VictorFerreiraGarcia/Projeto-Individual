@@ -18,6 +18,11 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.STRING,
             allowNull: false
         },
+		dataHora: {
+            field: 'dataHora',
+            type: DataTypes.NOW,
+            allowNull: false
+        },
         fkUsuario: {
             field: 'fkUsuario',
             type: DataTypes.INTEGER,
