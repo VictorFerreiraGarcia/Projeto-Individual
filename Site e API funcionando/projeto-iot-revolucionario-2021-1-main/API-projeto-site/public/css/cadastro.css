@@ -17,9 +17,9 @@
 /* PÁGINA DO CONTATO */
 
 .box-cadastro h2 {
-    padding: 0px;
+    padding-top: 20px;
     color: rgb(240, 171, 25);
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
 
 .formulario {
@@ -41,7 +41,7 @@ form label, form p{
     padding: 30px;
     border-radius: 20px;
     width: 500px;
-    height: 380px;
+    height: 450px;
     box-shadow: 0 0 10px rgb(240, 171, 25);
     margin-top: 70px;
     margin-left: 150px;

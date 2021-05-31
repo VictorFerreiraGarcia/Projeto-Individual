@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fórum do meu Site</title>
+    <title>300 - Fórum</title>
     <link rel="stylesheet" href="css/publicacoes.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://i.postimg.cc/BQd13LBm/favicon-32x32.png">
 
     <script type="text/javascript" src="funcoes.js"></script>
 
@@ -33,22 +34,29 @@
     <!--header inicio-->
     <div class="metricas">
         <div class="cartazes">
+            <div class="nota1" id="nota1">
+                NOTA MÉDIA: 4.5
+            </div>
+
+            <div class="nota2" id="nota2">
+                NOTA MÉDIA: 4.5
+            </div>
             <a href="#filme1"><img
-              src="http://vacanerd.com.br/wp-content/uploads/2014/03/mzl.ltdunkrj.jpg"
+              src="https://i.ibb.co/qmd6cKx/ascensao.jpg"
               alt="banner 300"
             /> </a>
 
             <a href="#filme2"><img
-              src="https://i.ibb.co/qmd6cKx/ascensao.jpg"
+              src="http://vacanerd.com.br/wp-content/uploads/2014/03/mzl.ltdunkrj.jpg"
               alt="banner 300 A Ascensão do Império"
             />
           </a>
             <br />
 
-            <select class="listasNotas" name="listaNotaFilme1" id="idNotaFilme1">
+            <select onchange="calcMediaFilmes1()" class="listasNotas"name="listaNotaFilme1" id="idNotaFilme1">
     
                 <option value="nulo">AVALIE UMA NOTA</option>
-                <option value="1">NOTA 1</option>
+                <option value=1>NOTA 1</option>
                 <option value="2">NOTA 2</option>
                 <option value="3">NOTA 3</option>
                 <option value="4">NOTA 4</option>
@@ -56,10 +64,10 @@
 
             </select>
 
-            <select class="listasNotas2"name="listaNotaFilme2" id="idNotaFilme2">
+            <select onchange="calcMediaFilmes2()" class="listasNotas2"name="listaNotaFilme2" id="idNotaFilme2">
     
                 <option value="nulo">AVALIE UMA NOTA</option>
-                <option value="1">NOTA 1</option>
+                <option value=1>NOTA 1</option>
                 <option value="2">NOTA 2</option>
                 <option value="3">NOTA 3</option>
                 <option value="4">NOTA 4</option>
@@ -76,8 +84,8 @@
             </div>
             <div class="nav">
                 <ul>
-                    <!-- <li><a href="tempo-real.html">Tempo Real</a></li>
-                    <li><a href="grafico-chartjs.html">Gráfico de histórico recente</a></li> -->
+                    <li><a href="jogo.html">JOGO</a></li>
+                    <!-- <li><a href="grafico-chartjs.html">Gráfico de histórico recente</a></li>  -->
                     <li><a href="#" class="highlight" onclick="logoff()">LOGOUT</a></li>
                     <!-- <li><a href="pagina-estatica-chartsjs.html"> -->
                         <!-- <i class="show-on-hover">IR PARA PÁGINA GRÁFICO ESTÁTICO</i> -->
@@ -96,7 +104,7 @@
                 <form id="form_publicar" method="post" onsubmit="return publicar()">
                     <span id="descricao">Descrição:</span>
                     <br>
-                    <textarea id="" rows="5" cols="50" maxlength="1000" class="textarea-padrao" name="descricao"></textarea>
+                    <textarea id="" rows="5" cols="50" maxlength="1000" placeholder="Escreva aqui a sua publicação..." class="textarea-padrao" name="descricao"></textarea>
                     <br>
                     <button id="btn_publicar" class="btn-green">Publicar</button>
                 </form>
@@ -114,12 +122,47 @@
         </div>
     </div>
 
-
-
 </body>
 
 
 <script>
+
+        var listaNotasFilme1 = [5,2,4,3];
+        var listaNotasFilme2 = [5,2,4,3];
+
+    function calcMediaFilmes1(){
+
+        if(idNotaFilme1.value == 'nulo'){
+        }
+        else{
+            somaNotas = 0;
+            
+            listaNotasFilme1.push(Number(idNotaFilme1.value))
+            for(var contador = 0; contador < listaNotasFilme1.length; contador++){
+            somaNotas += listaNotasFilme1[contador];
+            }
+            media = somaNotas / listaNotasFilme1.length;
+
+            nota1.innerHTML = `NOTA MÉDIA: ${media.toFixed(1)}`
+        }
+    }
+
+    function calcMediaFilmes2(){
+
+        if(idNotaFilme1.value == 'nulo'){
+        }
+        else{
+            somaNotas = 0;
+
+            listaNotasFilme2.push(Number(idNotaFilme2.value))
+            for(var contador = 0; contador < listaNotasFilme2.length; contador++){
+            somaNotas += listaNotasFilme2[contador];
+            }
+            media = somaNotas / listaNotasFilme2.length;
+
+            nota2.innerHTML = `NOTA MÉDIA: ${media.toFixed(1)}`
+        }
+    }
 
     function publicar() {
         console.log("entrei!")

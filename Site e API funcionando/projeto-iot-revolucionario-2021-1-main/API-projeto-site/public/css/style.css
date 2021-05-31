@@ -104,7 +104,7 @@ html{
     width: 100%;
     height: 623px;
     background-size: cover;
-    background: linear-gradient(black, rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.2), rgb(0, 0, 0, 0.7), black), url();
+    background: linear-gradient(black, rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.2), rgb(0, 0, 0, 0.7), black), url(https://i.ibb.co/FqZSPs3/gurreiro.jpg);
     background-size: cover;
     text-align: center;
     display: flex;
