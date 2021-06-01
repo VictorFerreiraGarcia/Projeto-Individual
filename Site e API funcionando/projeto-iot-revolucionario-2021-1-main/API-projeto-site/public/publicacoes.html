@@ -35,11 +35,11 @@
     <div class="metricas">
         <div class="cartazes">
             <div class="nota1" id="nota1">
-                NOTA MÉDIA: 4.5
+                NOTA MÉDIA: 7.6
             </div>
 
             <div class="nota2" id="nota2">
-                NOTA MÉDIA: 4.5
+                NOTA MÉDIA: 8.0
             </div>
             <a href="#filme1"><img
               src="https://i.ibb.co/qmd6cKx/ascensao.jpg"
@@ -61,17 +61,27 @@
                 <option value="3">NOTA 3</option>
                 <option value="4">NOTA 4</option>
                 <option value="5">NOTA 5</option>
+                <option value="6">NOTA 6</option>
+                <option value="7">NOTA 7</option>
+                <option value="8">NOTA 8</option>
+                <option value="9">NOTA 9</option>
+                <option value="10">NOTA 10</option>
 
             </select>
 
             <select onchange="calcMediaFilmes2()" class="listasNotas2"name="listaNotaFilme2" id="idNotaFilme2">
     
                 <option value="nulo">AVALIE UMA NOTA</option>
-                <option value=1>NOTA 1</option>
+                <option value="1">NOTA 1</option>
                 <option value="2">NOTA 2</option>
                 <option value="3">NOTA 3</option>
                 <option value="4">NOTA 4</option>
                 <option value="5">NOTA 5</option>
+                <option value="6">NOTA 6</option>
+                <option value="7">NOTA 7</option>
+                <option value="8">NOTA 8</option>
+                <option value="9">NOTA 9</option>
+                <option value="10">NOTA 10</option>
 
             </select>
         </div>
@@ -127,12 +137,17 @@
 
 <script>
 
-        var listaNotasFilme1 = [5,2,4,3];
-        var listaNotasFilme2 = [5,2,4,3];
+        var listaNotasFilme1 = [10,2,10,9,7];
+        var listaNotasFilme2 = [8,7,7,8,10];
+        var gambiarra = false;
+        var gambiarra2 = false;
 
     function calcMediaFilmes1(){
 
         if(idNotaFilme1.value == 'nulo'){
+        }
+        if (gambiarra == true){
+            alert ('Você já deu sua nota nessa sessão! Por favor leia comentários e reassista o filme antes de avaliar novamente.')
         }
         else{
             somaNotas = 0;
@@ -144,12 +159,16 @@
             media = somaNotas / listaNotasFilme1.length;
 
             nota1.innerHTML = `NOTA MÉDIA: ${media.toFixed(1)}`
+            gambiarra = true;
         }
     }
 
     function calcMediaFilmes2(){
 
         if(idNotaFilme1.value == 'nulo'){
+        }
+        if (gambiarra2 == true){
+            alert ('Você já deu sua nota nessa sessão! Por favor leia comentários e reassista o filme antes de avaliar novamente.')
         }
         else{
             somaNotas = 0;
@@ -161,6 +180,7 @@
             media = somaNotas / listaNotasFilme2.length;
 
             nota2.innerHTML = `NOTA MÉDIA: ${media.toFixed(1)}`
+            gambiarra2 = true;
         }
     }
 
