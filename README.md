@@ -11,13 +11,12 @@
 </h1> -->
 
 <h4 align="center"> 
-	🚧 Moranguetes 🍓🍓🍓 em construção  🚧
+	🚧 300 💪💪💪 em construção  🚧
 </h4>
 
 <p align="center">
  <a href="#-sobre-o-projeto">Sobre</a> •
  <a href="#-funcionalidades">Funcionalidades</a> •
- <a href="#-layout">Layout</a> • 
  <a href="#-como-executar-o-projeto">Como executar</a> • 
  <a href="#-tecnologias">Tecnologias</a> • 
 </p>
@@ -93,12 +92,11 @@ $ code .
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
-#### **Website** ([React](https://reactjs.org/) + [TypeScript](https://www.typescriptlang.org/))
+#### **Website**
 
 - **[HTML](https://www.w3schools.com/html/)**
 - **[CSS](https://www.w3schools.com/css/)**
 - **[JS](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)**
-- **[Bootstrap](https://getbootstrap.com)**
 
 ## 💪 Como contribuir para o projeto
 
