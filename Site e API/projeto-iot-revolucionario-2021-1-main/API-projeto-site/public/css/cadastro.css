@@ -1,0 +1,107 @@
+/* INÍCIO BANNER CADASTRO */
+.bannerCadastro {
+    width: 100%;
+    height: 623px;
+    background-size: cover;
+    background: linear-gradient(black, rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.2), rgb(0, 0, 0, 0.7), black), url(https://i.ibb.co/vcGpZGZ/you.jpg);
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid 2px black;
+}
+
+/* FIM BANNER CADASTRO */
+
+/* PÁGINA DO CONTATO */
+
+.box-cadastro h2 {
+    padding-top: 20px;
+    color: rgb(240, 171, 25);
+    margin-bottom: 60px;
+}
+
+.formulario {
+    float: left;
+    width: 100%;
+}
+
+form label, form p{
+    display: block;
+    font-size: 20px;
+    margin-bottom:10px ;
+}
+
+.box-cadastro {
+    float: left;
+    display: inline-block;
+    background-color: rgb(20, 17, 17);
+    box-shadow: unset 3px 3px 5px 2px #ccc;
+    padding: 30px;
+    border-radius: 20px;
+    width: 500px;
+    height: 450px;
+    box-shadow: 0 0 10px rgb(240, 171, 25);
+    margin-top: 70px;
+    margin-left: 150px;
+}
+
+.btn-cadastro {
+    color: rgb(173, 116, 7);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 7px;
+    border-color: rgb(156, 14, 14);
+    border-width: 4px;
+    border-radius: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: rgb(173, 116, 7, 0.0);
+}
+
+.btn-cadastro:hover {
+    cursor: pointer;
+    color: rgb(240, 171, 25);
+    border-color: rgb(173, 116, 7);
+    transform: scale(1.05);
+}
+
+.btn-cadastro:active {
+    color: rgb(156, 14, 14);
+}
+
+.input-padrao {
+    width: 90%;
+    height: 25px;
+    margin-bottom: 20px;
+    display: inline-block;
+    color: rgb(173, 116, 7);
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 3px rgb(173, 116, 7);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.input-padrao:hover {
+    border-bottom: solid 4px rgb(240, 171, 25);
+}
+
+.input-padrao:active {
+    border-bottom: solid 4px rgb(240, 171, 25);
+}
+
+.box-cadastro ::placeholder {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+.dados{
+    float: left;
+    margin-left: 23px;
+}
+
+#form_cadastro {
+    color: rgb(240, 171, 25);
+}

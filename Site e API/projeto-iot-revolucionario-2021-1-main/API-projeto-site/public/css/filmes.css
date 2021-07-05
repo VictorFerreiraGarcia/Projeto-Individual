@@ -1,0 +1,264 @@
+/* INÍCIO BANNER FILMES */
+.bannerFilmes {
+    width: 100%;
+    height: 630px;
+    background-size: cover;
+    background: linear-gradient(black, rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.2), rgb(0, 0, 0, 0.7), black), url(https://i.ibb.co/93K2y2z/gifluta-1.gif);
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid 2px black;
+}
+
+.bannerFilmes h1 {
+    margin-top: 160px;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+.bannerFilmes h3 {
+    color: whitesmoke;
+    text-transform: uppercase;
+    text-align: right;
+    font-weight: lighter;
+    width: 202px;
+    text-align: center;
+    float: left;
+}
+
+#titulo1 {
+    margin-left: 382px;
+}
+
+#titulo2 {
+    margin-left: 25px;
+}
+
+.bannerFilmes img {
+    width: 200px;
+    height: 300px;
+    margin-right: 20px;
+    border: solid 1px #777;
+}
+
+.bannerFilmes img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    filter: brightness(60%);
+
+}
+
+/* FIM DO BANNER FILMES */
+
+/* INÍCIO FILMES */
+
+.filme {
+    height: 800px;
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(29, 27, 27));
+}
+
+
+
+.filme h2 {
+    margin-top: 50px;
+    width: 60%;
+    color: rgb(173, 116, 7);
+    float: right;
+    text-align: center;
+}
+
+.filme img {
+    width: 252px;
+    height: 380px;
+    margin-top: 45px;
+    float: left;
+}
+
+.filme p {
+    margin-top: 25px;
+    width: 60%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    color: white;
+    float: right;
+    text-align: justify;
+}
+
+.trailer {
+    margin-left: 33%;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.filme ul {
+    margin-top: 80px;
+    margin-left: -20px;
+    width: 15%;
+    float: left;
+}
+
+.filme li {
+    list-style: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #777;
+    font-size: 15px;
+    font-weight: lighter;
+    text-decoration: none;
+}
+
+.filme iframe {
+    box-shadow: 0 0 10px rgb(29, 27, 27);
+}
+
+#filme2 {
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(0, 0, 0));
+}
+
+#filme2 img {
+    float: right;
+}
+
+#filme2 ul {
+    width: 15%;
+    float: right;
+}
+
+#filme2 h2 {
+    float: left;
+}
+
+#filme2 p {
+    float: left;
+}
+
+#filme2 iframe {
+    margin-left: 0;
+    margin-left: 19.2%;
+}
+
+/* INÍCIO ELENCO */
+
+#elenco {
+    float: left;
+    color: rgb(173, 116, 7);
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    width: 100%;
+
+}
+
+.atores {
+    background-color: rgb(29, 27, 27);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards h1 {
+    margin-top: -25px;
+    margin-bottom: 27px;
+    color: rgb(240, 171, 25);
+    text-align: center;
+}
+
+.nomeAtor {
+    font-size: 13px;
+    font-weight: bold;
+    color: rgb(173, 116, 7);
+    text-align: center;
+}
+
+.atores p {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 130px;
+    height: 80px;
+    padding-top: 4px;
+    width: 100%;
+    background-color: rgb(20, 17, 17);
+    font-weight: none;
+    text-align: center;
+    font-size: 16px;
+    color: #777;
+    border-radius: 10px;
+}
+
+.atores {
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://i.ibb.co/c6sjDrB/licensed-image.jpg);
+    width: 120px;
+    float: left;
+    margin: 5px;
+    height: 187px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    /* box-shadow: 3px 3px 3px #999; */
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+
+}
+
+#ator2 {
+    background-image: url(https://i.pinimg.com/474x/8c/bc/7d/8cbc7d9796f6d4a26f21a0a0892fd5df.jpg);
+}
+
+#ator3 {
+    background-image: url(https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_800,h_445/https://www.navecriativa.com/wp-content/uploads/2021/04/rodrigo-santoro-fernao-magalhaes-800x445.jpg);
+}
+
+#ator4 {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/b0/David_Wenham_2014_%28cropped%29.jpg);
+}
+
+#ator5 {
+    background-image: url(https://static.wixstatic.com/media/59f978_e80e0752e8a44de5b39552a0c47556d5.jpg/v1/fill/w_409,h_510,al_c,q_80,usm_0.66_1.00_0.01/59f978_e80e0752e8a44de5b39552a0c47556d5.webp);
+}
+
+#ator6 {
+    background-image: url(https://media.fstatic.com/182kHkzoKRDl5LRu8prryxFbw0Q=/full-fit-in/290x478/media/artists/avatar/2013/04/andrew-pleavin_a1521.jpg);
+}
+
+#ator7 {
+    background-image: url(https://cdnstatic8.com/cinemaginando.com/wp-content/uploads/michael-fassbender-capa.jpg);
+}
+
+#ator8 {
+    background-image: url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXjg2J0qRNGCHWtaOL-nj4AkX1nH4-2tPW83bEWaaKDDsn7zDI);
+}
+
+#ator9 {
+    background-image: url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSdzxx_-A3KRoMYg7Fyn7k4iAAQHeh5HUsLHouUbMOWUKm6Z8uI);
+}
+
+#ator10 {
+    background-image: url(http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcTTNvhxvjtJmoG_U-2i6rrFZ5FmkHdXoJKJNrVTM8wJ1DuYaZqWAMzLYprESM-h);
+}
+
+#ator11 {
+    background-image: url(https://musicimage.xboxlive.com/catalog/video.contributor.d5fd6400-0200-11db-89ca-0019b92a3933/image?locale=pt-br&target=circle);
+}
+
+#ator12 {
+    background-image: url(https://images.mubicdn.net/images/cast_member/5895/cache-101914-1416620628/image-w856.jpg);
+}
+
+.atores:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgb(173, 116, 7);
+    filter: brightness(30%);
+}
+
+/* FIM DO ELENCO */
+
+/* FIM FILMES  */
